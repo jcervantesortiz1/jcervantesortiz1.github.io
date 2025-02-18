@@ -23,19 +23,20 @@
         </a>
     </div>
     <p>
-        The <strong>Grazioso Salvare Pet Management System</strong> is a Java based system that gives the user
-        the ability to see and manage dogs and monkeys from the Grazioso Salvare system. The user is able to add
-        a dog or moneky to the system, view a list of the animals, and lastly reserve an animal. The system is a 
-        console application.
-        Developed originally in IT-145: Foundation in Application Development, the system underwent 
-        significant upgrades in <strong>Enhancement Two</strong> as part of my 
+        The <strong>Animal Database and Dashboard</strong> is a Mongo database, with a user dashboard. It consists of
+        the Mongo database, a Python driver class, and a DASH dashboard. Furthermore the project has a README file that
+        walks users and stakeholders on how to install the system to their Linux system.
+        Developed originally in CS-340: Client/Server Development, the system underwent 
+        significant upgrades in <strong>Enhancement Three</strong> as part of my 
         <strong>CS-499: Computer Science Capstone</strong>.
     </p>
     <p>
         These enhancements focused on implementing industry-standard solutions, improving 
-        user interactivity, and ensuring secure, reliable data handling. The system improvemnts look at creating
-        a proper class structure for the system, added secure coding practices to ensure proper system function, 
-        and convert the current Arraylist storage mechanisms so that they use a Hashmap instead.
+        user interactivity, and ensuring secure, reliable data handling in the Windows system. The overall
+        enhancement allows the user to install and run the system on a Windows system instead of Linux. Furthermore
+        a testing class is created to ensure proper functionality and connection to the database. Lastly the 
+        updated README provides insight on how to install and run the system while also showing and explaining to the
+        user the various features of the dashboard.
     </p>
 </section>
 
@@ -43,45 +44,48 @@
     <h2>Key Improvements</h2>
     <ul>
         <li>
-            <strong>New Class Structure:</strong> Moved functions to a new Logic.java class that will handle all of
-            the system logic, and only leaving the main method and the menu method in the Driver.java class.
+            <strong>New MongoDB Database:</strong> The database needed to be created on Windows. 
         </li>
         <li>
-            <strong>Error Handling:</strong> Added try and catch blocks to ensure that improper input doesn't cause
-            the system to crash.
+            <strong>Proper Testing:</strong> A testing class was created to allow users to ensure that the system 
+            is able to connect to the database and perform various functions as needed.
         </li>
         <li>
-            <strong>Created a Remove Animal Method:</strong> Added a way that users can remove an animal from the
-            system if they need to.
-        </li>
-        <li>
-            <strong>Improved Data Storage:</strong> Converted the system to use a Hashmap instead of an Arraylist.
+            <strong>Created a DASH Dashboard:</strong> Created a DASH dashboard so that the user is able to see all 
+            of the animals in the database on a data table, offer filtering options, as well as display important information 
+            such as the breed breakdown and location in easy to view charts and maps.
         </li>
     </ul>
 </section>
 
 <section>
     <h2>Technical Implementation</h2>
-    <p>The following changes were implemented to enhance the app:</p>
+    <p>The following changes were implemented to enhance the system:</p>
     <ul>
         <li>
-            Created the <code>Logic</code> class to hold all of the system logic, and leaving only the main method
-            and menu method in the Driver.java class, which allows for system upgrades and feature add ons later. The 
-            new Logic.java class also has a Remove animal method that removes an animal from the Hashmap.
+            Created the database to hold the animal data. This was done using MongoDB compass. For how it was done step 
+            by step you can consult the README file.
         </li>
         <li>
-            Added try and catch blocks in any method that requires user input. This ensures that if the user passes in an
-            invalid variable or empty line that the system terminates the process and tells them the input is invalid.
+            The testing class ensures that the main driver class functions properly. It tests that the driver class can properly 
+            connect to the user database. After that the system tests that it can create different type of animals and add them to the 
+            database, and that the proper exception is thrown when the user tries to create an invalid item. Then it ensures it is able to 
+            retrieve infromation from the database and ensure that it throws the right execption when it tries to process an invalid querie. 
+            It tests that the system can properl yupdate differeent items, and throw the correct exception when it is uanable too for any given reason. 
+            Lastly it checks that entries can be deleted and that an exception is thrown when it is not able to do so for any reason. This testing class is 
+            very important in ensuring that the database and its connections work properly.
         </li>
         <li>
-            The remove method will ask the user for the type of animal they want to remove, and what their name is. The system
-            then will go through the objects key, value pairs and remove the animal.
+            The user dashboard was created using DASH which is a low-code framework for rapidly building data apps in Python. The dashboard will connect to the
+            database and display the database information in a data table that user is able to filter through. The system also has 3 filters for different types of
+            search and rescue options, and a reset option. Below the datatable there is a Pie chart of the animals in the database broken down by 
+            their breed, and next to it is a map that shows the location of the selected animal or the first animal in the datatable. When the user 
+            uses one of the filter options (whether one of the built in ones, or they filter through the data table) the pie chart and map will both update
+            accordingly to reflect the changes.
         </li>
         <li>
-            Migrated teh system to use a HashMap instead of an ArrayList. The HashMap allows for items to be found easier. If 
-            the system only has a few animals then there is no recognizable speed differences between using an ArrayList vs a 
-            HashMap, but when looking at a system that perhaps has hundreds of animals, having to iterate through every single item
-            can take up processing power and much more time. 
+            Other small improvements to the system include adding proper error handling to the create, read, update, and 
+            delete methods.
         </li>
     </ul>
 </section>
