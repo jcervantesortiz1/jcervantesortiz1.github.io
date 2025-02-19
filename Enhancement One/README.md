@@ -1,7 +1,7 @@
 # Inventory Management Application
 
 ## Overview
-The **Inventory Management App** is an Android mobile application developed to allow users to create and manage their inventory. It will send the users a notification when the amount of an item is low in stock, and a text message if an item is deleted. This project was originally developed as part of the   **CS-360: Mobile Architect & Programming** course at SNHU. It reflects key software design and engineering principles.
+The **Inventory Management App** is an Android mobile application developed to allow users to create and manage their inventory. It will send the users a notification when the amount of an item is low in stock, and a text message if an item is deleted. This project was originally developed as part of the **CS-360: Mobile Architect & Programming** course at SNHU. It reflects key software design and engineering principles.
 
 This repository documents the enhancements made to the app as part of **Category One Enhancement** for the **CS-499: Computer Science Capstone**. This enhancement aligns with the following course outcomes.
 
