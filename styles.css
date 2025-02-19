@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: lightblue;
 }
 
@@ -10,4 +10,51 @@ h1 {
 p {
   font-family: verdana;
   font-size: 20px;
+}
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #b7b7b7;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: #332323;
+}
+
+.logo {
+  cursor: pointer;
+  color: white;
+  font-size: large;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
+nav a {
+  text-align: center;
+  cursor: pointer;
+  border-left: 1px solid white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.button {
+  background-color: #302b2b;
+  padding: 5px 10%;
+  color: white;
 }
