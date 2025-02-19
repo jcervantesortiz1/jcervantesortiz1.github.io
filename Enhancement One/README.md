@@ -58,7 +58,7 @@ The below enhancements were implemented to improbe usability, stability, and sec
 
 ## How to install/run
 ### PC
-1. Clone this repository to your local machine.
+1. Dowload the zip file to your local machine, and unzip it.
 2. Open the project in **Android Studio**.
 3. Connect a physical device or set up an emulator.
 4. Build and run the project.
